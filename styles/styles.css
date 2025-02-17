@@ -1,0 +1,457 @@
+* {
+  font-family: Alata;
+}
+    
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* Cover page */
+
+.cover-page {
+  max-width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  padding-inline: 9rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-menu {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+#close-menu {
+  display: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.menu-list li {
+  font-family: Josefin Sans;
+  color: hsl(0, 0%, 100%);
+  list-style-type: none;
+  margin-left: 2rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-list li::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  top: 150%;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  background: transparent;
+}
+
+.menu-list li:hover::after {
+  background: hsl(0, 0%, 100%);
+}
+
+.cover-title-section {
+  width: 38rem;
+  margin-top: 8rem;
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+/* Second page */
+
+.second-page {
+  padding: 9rem;
+  position: relative;
+}
+
+.interactive-vr-img-desktop {
+  width: 65%;
+}
+
+.interactive-vr-img-mobile {
+  display: none;
+}
+
+.interactive-vr-content {
+  background-color: hsl(0, 0%, 100%);
+  width: 35%;
+  padding: 6rem 0 0 6rem;
+  position: absolute;
+  right: 9rem;
+  bottom: 8rem;
+}
+
+/* Grid page */
+
+.our-creations-page {
+  padding-inline: 9rem;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.our-creations-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  gap: 2rem;
+}
+
+.grid-tile {
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-tile-img-desktop {
+  width: 100%;
+  transition: 200ms ease-in-out;
+}
+
+.grid-tile:hover .grid-tile-img-desktop {
+  filter: opacity(25%);
+}
+
+.grid-tile:hover .grid-tile-title {
+  color: hsl(0, 0%, 0%);
+}
+
+.grid-tile-img-mobile {
+  display: none;
+  transition: 50ms ease-in-out;
+}
+
+#see-all-btn {
+  position: absolute;
+  top: 0;
+  right: 9rem;
+  border: 2px solid hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
+  font-family: Alata;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  height: 3rem;
+  width: 9.5rem;
+  cursor: pointer;
+}
+
+#see-all-btn:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* Footer */
+
+.footer {
+  background-color: hsl(0, 0%, 0%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 9rem;
+  padding-block: 3rem;
+}
+
+.footer-menu-list {
+  padding-left: 0;
+}
+
+.footer-menu-list li {
+  font-family: Josefin Sans;
+  color: hsl(0, 0%, 100%);
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 2rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-menu-list li::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  top: 150%;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  background: transparent;
+}
+
+.footer-menu-list li:hover::after {
+  background: hsl(0, 0%, 100%);
+}
+
+.contact {
+  text-align: right;
+}
+
+.social-media-link {
+  margin-left: 1rem;
+  padding-block: 0.25rem;
+  cursor: pointer;
+}
+
+.social-media-link:hover {
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+/* Text */
+
+.cover-title {
+  font-family: Josefin Sans;
+  font-weight: 300;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  margin: 3rem;
+}
+
+.interactive-vr-title {
+  font-family: Josefin Sans;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.interactive-vr-text {
+  color: hsl(0, 0%, 55%);
+  line-height: 1.75rem;
+}
+
+.our-creations-title {
+  font-family: Josefin Sans;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;  
+}
+
+.grid-tile-title {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.5rem;
+  margin-block: 0;
+  max-width: 65%;
+  overflow-wrap: break-word;
+  font-family: Josefin Sans;
+  font-weight: 300;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+
+.copyright {
+  color: hsl(0, 0%, 41%);
+  font-size: 1rem;
+}
+
+@media screen and (max-width:48em) {
+
+  .cover-page {
+    max-width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+    padding-inline: 2rem;
+    position: relative;
+  }
+
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+  }
+
+  .logo-menu {
+    display: block;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+  
+  #close-menu {
+    display: block;
+  }
+
+  .menu-layout {
+    width: 0;
+    height: 100vh;
+    max-height: 100vh;
+    padding-block: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsl(0, 0%, 0%);
+  }
+
+  .menu-list {
+    padding-left: 2rem;
+    height: 100%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu-list li {
+    font-family: Josefin Sans;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    max-width: fit-content;
+    margin-left: 0;
+    margin-block: 1rem;
+    display: block;
+  }
+
+  .menu-list li::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: transparent;
+  }
+
+  .cover-title-section {
+    width: 100%;
+    margin-top: 12rem;
+  }
+  
+  .cover-title {
+    font-size: 3.25rem;
+    margin: 2rem;
+  }
+
+  .second-page {
+    padding-block: 8rem 4rem;
+    padding-inline: 2rem;
+  }  
+
+  .interactive-vr-img-desktop {
+    display: none;
+  }
+  
+  .interactive-vr-img-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .interactive-vr-content {
+    width: 100%;
+    padding: 0;
+    margin-top: 4rem;
+    position: unset;
+    text-align: center;
+  }
+
+  .interactive-vr-title {
+    font-size: 2.5rem;
+    margin-inline: 1rem;
+  }
+  
+  .interactive-vr-text {
+    margin-inline: 2rem;
+  }
+
+  .our-creations-page {
+    padding-inline: 2rem;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+  
+  .our-creations-grid {
+    display: block;
+  }
+
+  .grid-tile {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .grid-tile-img-desktop {
+    display: none;
+  }
+  
+  .grid-tile-img-mobile {
+    width: 100%;
+    display: block;
+  }
+    
+  .grid-tile:hover .grid-tile-img-mobile {
+    filter: opacity(25%);
+  }
+
+  #see-all-btn {
+    position: unset;
+    font-size: 1rem;
+    width: 50%;
+    margin-top: 2rem;
+  }
+
+  .our-creations-title {
+    font-size: 2.5rem;
+    margin-block: 3rem;
+  }
+  
+  .grid-tile-title {
+    bottom: 2rem;
+    left: 2rem;
+    width: 40%;
+  }
+
+  .footer {
+    display: block;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    text-align: center;
+  }
+  
+  .footer-menu-list {
+    padding-left: 0;
+    margin-block: 3rem;
+  }
+  
+  .footer-menu-list li {
+    margin-right: 0;
+    margin-block: 2rem;
+    display: block;
+  }
+
+  .footer-menu-list li::after {
+    width: 5%;
+  }
+
+  .contact {
+    text-align: center;
+  }
+  
+  .social-media-link {
+    margin-block: 2rem;
+    padding-block: 0.25rem;
+  }
+
+}
