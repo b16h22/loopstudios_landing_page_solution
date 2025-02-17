@@ -6,16 +6,16 @@ body {
   margin: 0;
   padding: 0;
   background-color: hsl(0, 0%, 100%);
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Cover page */
 
 .cover-page {
   max-width: 100%;
-  height: 100%;
-  background-image: linear-gradient(90deg, hsla(0, 0%, 0%, 0.2), hsla(0, 0%, 0%, 0.2)), url(../images/desktop/image-hero.jpg);
-  background-size: contain 100%;
-  background-repeat: no-repeat;
+  min-height: 100vh;
   padding-top: 3rem;
   padding-inline: 9rem;
 }
@@ -78,7 +78,7 @@ body {
 
 .second-page {
   padding-inline: 9rem;
-  padding-block: 9rem;
+  padding-block: 6rem 9rem;
   position: relative;
 }
 
