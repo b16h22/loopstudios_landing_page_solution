@@ -76,7 +76,8 @@ body {
 /* Second page */
 
 .second-page {
-  padding: 9rem;
+  padding-inline: 9rem;
+  padding-block: 6rem 9rem;
   position: relative;
 }
 
