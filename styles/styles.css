@@ -273,7 +273,6 @@ body {
     background-image: url(../images/mobile/image-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 3rem;
     padding-inline: 2rem;
     position: relative;
   }
@@ -340,12 +339,11 @@ body {
 
   .cover-title-section {
     width: 100%;
-    margin-top: 12rem;
   }
   
   .cover-title {
     font-size: 3.25rem;
-    margin: 2rem;
+    padding: 2rem;
   }
 
   .second-page {
